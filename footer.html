@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+       
+        .footer {
+            background-color: #0F2454;
+            padding: 50px 0;
+            color: white;
+        }
+        .contact-box {
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+            border: 2PX solid black;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .contact-box i {
+            font-size: 30px;
+            margin-right: 15px;
+        }
+        .footer-logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 20px;
+            margin: 0 10px;
+        }
+        .subscribebox{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .box2{
+            display: flex;
+            gap: 5px;
+        }
+        .subscribe input {
+            width: 70%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .subscribe button {
+            background-color: #1ba6e0;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+        .headinglogo{
+            background-color: transparent;
+        }
+        .logoimg{
+            width: 120px;
+        }
+        .contact a{
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+        }
+
+        #scrollToTop {
+            display: none; /* Default hidden */
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    
+    width: 50px; /* Equal width and height */
+    height: 50px;
+    
+    background: rgb(0, 98, 255);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%; /* Makes it circular */
+
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    font-size: 24px; /* Increase caret size */
+    font-weight: bold;
+    }
+
+    #scrollToTop.show {
+    display: flex; /* Flexbox enable */
+}
+    
+.oneline{
+    /* background-color: rgb(138, 9, 9); */
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    
+}  
+
+.oneline .email {
+    width: 250px;
+    height: 40px;
+    border-radius: 8px;
+    border: 2px solid gray;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: transparent;
+    border: 2px solid gray;
+    color: white; /* Text color ko visible rakhne ke liye */
+}
+
+.oneline .email::placeholder {
+    color: rgba(255, 255, 255, 0.5); /* Placeholder color ko halka white kar diya */
+}
+
+.oneline  .submit{
+    color: black;
+    background-color: antiquewhite;
+    transition: all 0.3s ease;
+    width: auto;
+    height: 40px;
+    border-radius: 8px;
+    border: 2px solid gray;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.oneline .email input{
+    background-color: #0F2454;
+}
+.oneline  .submit:hover{
+    background-color: #0F2454;
+    color: white;
+
+}
+
+@media(min-width:320px) and (max-width:1366px){
+    .oneline{
+    /* background-color: rgb(138, 9, 9); */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+    
+}  
+.oneline  .submit{
+    width: 250px;
+  
+}
+}
+    </style>
+</head>
+<body>
+    <footer class="footer container-fluid">
+
+        <div class="container py-2">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4"> 
+                    <div class="contact-box">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Call us</strong>
+                            <p class="contact"><a href="tel:+919355144775"> +919355144775 </a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4"> 
+                    <div class="contact-box">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Write to us</strong>
+                            <p class="contact "><a href="mailto:info@otpdmc.com">info@otpdmc.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4"> 
+                    <div class="contact-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Address</strong>
+                            <p class="contact"><a href="https://www.google.com/maps/search/24+King+St,+SC+29401+USA" target="_blank">Delhi NCR, Varanasi, U.P.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+        <div class="container py-2">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-sm-12 col-12">
+                    <div class="headinglogo">
+                        <img src="OTP_DMC_LOGO.png" alt="" class="logoimg">
+                        <p class="py-2">Quisque imperdiet sapien porttito the bibendum sellentesque the commodo erat acar accumsa lobortis, enim diam the nesuen.</p>
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-12 col-12">
+                    <h4>Quick Links</h4>
+                    <div class="footer-links pb-2">
+                        <a href="#">About</a>
+                        <a href="#">Tours</a>
+                        <a href="#">Destinations</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-12 col-12 pb-2">
+                    <h4>Subscribe</h4>
+                    <p>Sign up for our monthly blogletter to stay informed about travel and tours</p>
+
+
+                    <!-- footer form email sending... to google sheets -->
+                    <form id="form" class="submit-form">
+                        <p id="responseMsg" style="text-align: start; color: green;"></p>
+                       <div class="oneline">
+                        <label for="email">Email:</label>
+                          <div class="form-outer">
+                            
+                            <input type="email" id="email" class="email" name="email" placeholder="Subscribe With Email" required>
+                          </div>
+                          <div class="form-outer">
+                            <button type="submit" id="btn" class="submit">Submit</button>
+                          </div>
+                       </div>
+                    </form>
+
+
+
+
+                    <!-- <div class="subscribebox subscribe " id="form">
+                       <div class="box2">
+                        <p id="show-response"style="text-align: center; color: green;"></p>
+                       </div>
+                       <div class="box2">
+                        <input type="email" placeholder="Email Address" name="email">
+                        <button type="submit">Send</button>
+                       </div>
+                        
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="text-center">
+            <p>&copy; 2025 DuruThemes. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <button id="scrollToTop" >
+           <span> <i class="fa-solid fa-arrow-up"></i></span>
+        </button>
+
+        <script>
+            // Show/Hide Scroll Button
+            window.addEventListener("scroll", function() {
+                let button = document.getElementById("scrollToTop");
+                if (window.scrollY > 500) {
+                    button.style.display = "block";
+                } else {
+                    button.style.display = "none";
+                }
+            });
+        
+            // Smooth Scroll to Top
+            document.getElementById("scrollToTop").addEventListener("click", function() {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+
+
+
+
+
+
+
+// Email data sending to google sheet .................................................................
+let url = "https://script.google.com/macros/s/AKfycbyE4CyIuDNTdo6oCPZ_H5qmLS2Sv41JCtrvh3zZ4mScuvKllsG4gavhSsFksWnrz3PC/exec";
+
+      
+document.getElementById("form").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let formData = new FormData(this);
+
+    fetch(url, {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.text())
+    
+    .then(data => {
+        document.getElementById("btn").innerText = "Submit" ;
+        document.getElementById("responseMsg").innerText = data;
+        this.reset();
+    })
+    .catch(error => console.error("Error:", error));
+});
+   
+
+        </script>
+    </footer>
+
+
+    
+</body>
+</html>
